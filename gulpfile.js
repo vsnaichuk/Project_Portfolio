@@ -22,9 +22,13 @@ gulp.task('styles', function() {
                 prefix: "",
                 suffix: "-min",
               }))
-              .pipe(autoprefixer())
+              .pipe(autoprefixer({
+                  Browserslist: ['last 8 versions'],
+                  cascade: true
+              }))
             .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(gulp.dest("dist/css"))
+            .pipe(gulp.dest("src/css"))
             .pipe(browserSync.stream());    
 });
 
