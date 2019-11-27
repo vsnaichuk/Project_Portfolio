@@ -1,5 +1,5 @@
 {
-  "name": "project_landing_pulse",
+  "name": "project_portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VolodumurSN/Project_Landing_Pulse.git"
+    "url": "git+https://github.com/VolodumurSN/Project_Portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VolodumurSN/Project_Landing_Pulse/issues"
+    "url": "https://github.com/VolodumurSN/Project_Portfolio/issues"
   },
-  "homepage": "https://github.com/VolodumurSN/Project_Landing_Pulse#readme",
+  "homepage": "https://github.com/VolodumurSN/Project_Portfolio#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -29,7 +29,7 @@
     "imagemin-jpegtran": "^6.0.0"
   },
   "browserslist": [
-    "last 2 version",
+    "last 8 version",
     "> 1%",
     "maintained node versions",
     "not dead"
