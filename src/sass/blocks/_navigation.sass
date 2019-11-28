@@ -2,9 +2,17 @@
     display: flex
     font-size: 15px
     &__link
-        padding: 18px 30px
+        padding: 7px 25px
+        margin-right: 10px
         color: $black
         font-weight: 500
         text-decoration: none
+        border-radius: 30px
+        transition: 0.3s all
         &:hover
-            background-color: red
+            background-color: darken($gray, 2%)
+            text-decoration: none
+            color: $black
+        &.active
+            color: $white
+            background-color: $pink

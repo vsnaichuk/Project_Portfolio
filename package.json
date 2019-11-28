@@ -26,7 +26,8 @@
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "imagemin-jpegtran": "^6.0.0"
+    "imagemin-jpegtran": "^6.0.0",
+    "panini": "^1.6.3"
   },
   "browserslist": [
     "last 8 version",

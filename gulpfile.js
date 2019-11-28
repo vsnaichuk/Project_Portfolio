@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const panini = require('panini');
 
 gulp.task('serverBrowsersync', function() {
     browserSync.init({
@@ -40,7 +41,13 @@ gulp.task('watch', function() {
 });
 
 gulp.task('html', function () {
+    panini.refresh();
     return gulp.src("src/*.html")
+        .pipe(panini({
+            root: 'src/',
+            layouts: 'src/tpl/layouts/',
+            partials: 'src/tpl/partials/'
+        }))
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
