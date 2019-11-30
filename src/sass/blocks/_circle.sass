@@ -1,0 +1,22 @@
+.circle
+    width: 350px
+    height: 420px
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15)
+    background-color: #000000
+    background-image: linear-gradient(to top, #f093fb 0%, #f5576c 100%)
+    border-radius: 60% 40% 49% 51% / 58% 45% 55% 42%
+    animation: circleRadius 4s alternate infinite
+    position: absolute
+    right: -120px
+    top: -20%
+    transform: translateY(-50%)
+    z-index: -1
+
+@keyframes circleRadius
+    0%
+        border-radius: 60% 40% 49% 51% / 58% 45% 55% 42%
+        transform: translate3d(0, 0, 0)  
+    100%
+        border-radius: 41% 59% 21% 79% / 42% 50% 50% 58%
+        transform: translate3d(0, -70px, -70px)
+        
