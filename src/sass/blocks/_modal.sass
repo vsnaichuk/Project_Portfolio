@@ -1,0 +1,42 @@
+.modal
+    &-content
+        position: relative
+        width: 100%
+        padding: 30px
+        border-radius: $radius_sm
+        background-color: $white
+        box-shadow: $shadow
+    &__title
+        font-size: 24px
+        font-weight: 500
+        text-align: left
+        line-height: 24px
+        color: $pink
+    &__subtitle
+        margin-top: 12px
+        font-size: 15px
+        font-weight: 500
+        text-align: left
+        line-height: 20px
+        color: $black
+    &__close
+        position: absolute
+        width: 17px
+        height: 17px
+        padding: 0
+        border: 0
+        background: none
+        top: -20px
+        right: -20px
+        z-index: 1
+        cursor: pointer
+        transition: transform 0.2s linear
+        &:focus
+            outline: 0
+        &:hover
+            transform: rotate(180deg)
+        &-icon
+            display: block
+            width: 100%
+            height: 100%
+            fill: $white

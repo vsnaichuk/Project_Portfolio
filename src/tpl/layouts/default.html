@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+        <!-- Head -->
         {{> head }}  
 </head>
 <body>
+    <!-- SVG sprite -->
+    {{> sprite }}
 
-{{> sprite }}
+    <div class="page">
+        <!-- Header -->
+        {{> header }}
 
-<div class="page">
-    <!-- Header -->
-    {{> header }}
+        <!-- Content -->
+        <div class="content">
+            {{> body }}
+        </div>
 
-    <!-- Content -->
-    <div class="content">
-        {{> body }}
+        <!-- Footer -->
+        {{> footer }}
     </div>
 
-    <!-- Footer -->
-    {{> footer }}
-</div>
+    {{> modal }}
     
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
