@@ -1,28 +1,21 @@
 .header
     margin-top: 30px
 
-.header-inner
-    width: 1110px
-    height: 58px
-    box-shadow: $shadow
-    border-radius: $radius
-    background-color: $white
-    &__logo
-        display: block
-        padding: 14px 21px
-        max-width: 100%
-        img
-            height: 30px
-        &:hover
-            animation: inside 0.5s ease infinite
+    &-inner
+        width: 1110px
+        height: 58px
+        box-shadow: $shadow
+        border-radius: $radius
+        background-color: $white
 
-@keyframes inside
-            from
-                transform: scale(1)
-            50%
-                transform: scale(0.98)
-            to
-                transform: scale(1)
+        &__logo
+            display: block
+            padding: 14px 21px
+            max-width: 100%
+            img
+                height: 30px
+            &:hover
+                animation: inside 0.5s ease infinite
 
 .header__row
     align-items: center
