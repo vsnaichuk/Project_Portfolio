@@ -1,0 +1,31 @@
+.portfolio
+    &__item
+        max-width: 540px
+        position: relative
+        background-color: #000
+        &:hover
+            .portfolio__img
+                opacity: 0.3
+
+    &__link
+        display: block
+
+    &__img
+        display: block
+        max-width: 100%
+        height: auto
+        transition: opacity 0.1s linear
+ 
+    &__title
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 1
+        width: 100%
+        padding: 15px
+        font-size: 24px
+        font-weight: 500
+        color: $white
+        pointer-events: none
+
+        transform: translateY(100%)
