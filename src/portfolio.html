@@ -4,16 +4,80 @@ title: Portfolio
 ---
 
 <div class="container">
-    <h1 class="content__title">Портфолио</h1>
+    <h1 class="content__title">Мои работы</h1>
 
     <div class="portfolio">
+        
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+           
+            <!-- slides -->
+            <div class="carousel-inner">
 
-        <div class="portfolio__item">
-            <a class="portfolio__link" target="_blank" href="#">
-                <img class="portfolio__img" src="img/slider_portfolio/1.jpg" alt="first project">
+
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="portfolio__item col-6">
+                            <a class="portfolio__link" target="_blank" href="#">
+                                <img class="portfolio__img" src="img/slider_portfolio/1.jpg" alt="First slide">
+                            </a>
+                            <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                        </div>
+
+                        <div class="portfolio__item col-6">
+                            <a class="portfolio__link" target="_blank" href="#">
+                                <img class="portfolio__img" src="img/slider_portfolio/1.jpg" alt="First slide">
+                            </a>
+                            <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="portfolio__item col-6">
+                            <a class="portfolio__link" target="_blank" href="#">
+                                <img class="portfolio__img" src="img/slider_portfolio/2.jpg" alt="Second slide">
+                            </a>
+                            <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                        </div>
+
+                        <div class="portfolio__item col-6">
+                            <a class="portfolio__link" target="_blank" href="#">
+                                <img class="portfolio__img" src="img/slider_portfolio/2.jpg" alt="Second slide">
+                            </a>
+                            <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                        </div>
+
+                    </div>                       
+                </div>
+
+
+            </div>
+
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- controls -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <svg class="carousel__icon">
+                    <use xlink:href="#icon-prev"></use>
+                </svg>
             </a>
-            <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
-        </div>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <svg class="carousel__icon">
+                    <use xlink:href="#icon-next"></use>
+                </svg>
+            </a>
 
+
+        </div>
+            
     </div>
 </div>

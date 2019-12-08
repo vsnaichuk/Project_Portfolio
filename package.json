@@ -28,7 +28,8 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "imagemin-jpegtran": "^6.0.0",
-    "panini": "^1.6.3"
+    "panini": "^1.6.3",
+    "slick-carousel": "^1.8.1"
   },
   "browserslist": [
     "last 8 version",

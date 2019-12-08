@@ -1,14 +1,18 @@
 .portfolio
+    margin-top: 55px
+
     &__item
-        max-width: 540px
         position: relative
-        background-color: #000
+        overflow: hidden
         &:hover
             .portfolio__img
                 opacity: 0.3
+            .portfolio__title
+                transform: translateY(0)
 
     &__link
         display: block
+        background-color: #000
 
     &__img
         display: block
@@ -29,3 +33,4 @@
         pointer-events: none
 
         transform: translateY(100%)
+        transition: transform 0.2s linear

@@ -1,0 +1,40 @@
+.carousel
+
+    &-item
+        max-width: 1110px
+
+    &-control-prev
+        left: -110px
+        &:focus
+            .carousel__icon
+                fill: $pink
+        &:hover
+            .carousel__icon
+                fill: $pink
+    
+    &-control-next
+        right: -110px
+        &:focus
+            .carousel__icon
+                fill: $pink
+        &:hover
+            .carousel__icon
+                fill: $pink
+
+    &-indicators
+        bottom: -60px
+
+    &-indicators li
+        background-color: $gray_dark
+        transition: 0.2s linear
+        &:hover
+            background-color: $pink
+    
+    &-indicators .active
+        background-color: $pink
+
+    &__icon
+        height: 48px
+        width: 48px
+        fill: $gray_dark
+        transition: 0.2s linear
