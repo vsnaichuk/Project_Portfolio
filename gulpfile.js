@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const panini = require('panini');
 const rigger = require('gulp-rigger');
+const uglify = require('gulp-uglify');
 
 gulp.task('serverBrowsersync', function() {
     browserSync.init({
@@ -59,6 +60,7 @@ gulp.task('html', function () {
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
         .pipe(rigger())
+        .pipe(uglify())
         .pipe(gulp.dest("dist/js")); 
 });
 
