@@ -28,6 +28,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "panini": "^1.6.3"
   },
   "browserslist": [
