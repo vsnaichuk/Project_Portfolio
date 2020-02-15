@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
         <!-- Head -->
-        {{> head }}  
+        {{> head }}
 </head>
 <body>
     <!-- SVG sprite -->
@@ -12,12 +12,18 @@
         <!-- Header -->
         {{> header }}
 
-       
+        <!-- Content -->
+        <div class="content">
+            {{> body }}
+        </div>
+
+        <!-- Footer -->
+        {{> footer }}
     </div>
 
     {{> modal }}
-    
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.27/bootstrap-native-v4.min.js"></script>
-    <script defer src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.27/bootstrap-native-v4.min.js"></script>
 </body>
 </html>

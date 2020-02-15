@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.navigation'),
     menuItem = document.querySelectorAll('.navigation__link'),
+    caruselItemHide = document.querySelectorAll('.carousel-item_hide'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
@@ -13,5 +14,12 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('navigation_active');
         })
+    })
+
+    caruselItemHide.forEach(item => {
+        if(window.outerWidth < 577){
+            item.classList.remove('carousel-item_hide');
+            item.classList.add('carousel-item');
+        }
     })
 })
