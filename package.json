@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/VolodumurSN/Project_Portfolio#readme",
   "devDependencies": {
+    "animate-sass": "^0.8.2",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -38,6 +39,7 @@
     "not dead"
   ],
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "wowjs": "^1.1.3"
   }
 }

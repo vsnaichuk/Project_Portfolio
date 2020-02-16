@@ -15,12 +15,14 @@
         border-radius: $radius
         box-shadow: $shadow
         background-color: $white
+        p
+            margin: 10px 0 2px 0
 
     &__icon
         display: block
         position: absolute
         max-width: 50px
-        height: 20%
+        height: 12%
 
     &__title
         margin-top: 10px
@@ -30,9 +32,22 @@
         text-align: center
 
     &__text
-        margin-top: 35px
+        margin: 31px 0
         font-size: 15px
         font-weight: 500
         line-height: 23px
         color: $black
         text-align: justify
+
+    &__skillLine
+        height: 5px
+        width: 100%
+        background-color: #eee
+        position: relative
+        overflow: hidden
+
+    &__skill
+        display: block
+        height: 5px
+        border-radius: 0 0 50px
+        background-color: #2ea2cc

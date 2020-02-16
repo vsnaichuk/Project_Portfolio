@@ -1,3 +1,6 @@
+//= ../../node_modules/wowjs/dist/wow.min.js
+new WOW().init();
+
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.navigation'),
     menuItem = document.querySelectorAll('.navigation__link'),
