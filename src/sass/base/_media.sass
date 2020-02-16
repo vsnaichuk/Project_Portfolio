@@ -23,6 +23,9 @@
 
 
 @media (max-width: 991px)
+    .page
+        height: 100%
+
     .header-inner
         width: 689px
 
@@ -195,7 +198,7 @@
         width: 300px
         margin: 0 auto
         margin-top: 30px
-        font-size: 30px
+        font-size: 36px
         text-align: center
 
 
@@ -218,6 +221,17 @@
     .carousel-control-prev,
     .carousel-control-next
         display: none
+
+    .modal__close
+        top: 20px
+        right: 20px
+        &:hover
+            transform: rotate(0)
+        &-icon
+            top: 0
+            right: 0
+            fill: $pink
+
 
 @media (max-width: 400px)
     .author
