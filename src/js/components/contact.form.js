@@ -1,4 +1,4 @@
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyD47YgLHcb-6twzyyOdwTaAQPScLyncSnk",
     authDomain: "snaichuk-v.firebaseapp.com",
     databaseURL: "https://snaichuk-v.firebaseio.com",
@@ -11,16 +11,16 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-var messagesRef = firebase.database().ref('messages');
+const messagesRef = firebase.database().ref('messages');
 
 document.getElementById('contactForm').addEventListener('submit', submitForm);
   
   function submitForm(e){
     e.preventDefault();
   
-    var name = getInputVal('name');
-    var email = getInputVal('email');
-    var phone = getInputVal('phone');
+    const name = getInputVal('name');
+    const email = getInputVal('email');
+    const phone = getInputVal('phone');
   
     saveMessage(name, email, phone);
     
@@ -33,7 +33,7 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
   }
   
   function saveMessage(name, email, phone){
-    var newMessageRef = messagesRef.push();
+    let newMessageRef = messagesRef.push();
     newMessageRef.set({
       name: name,
       email:email,

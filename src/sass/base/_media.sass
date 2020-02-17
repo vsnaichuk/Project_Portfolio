@@ -69,6 +69,9 @@
         width: 509px
         height: 44px
     
+    .navigation__link
+        padding: 5px 18px
+    
     .content__title
         text-align: center
         font-size: 24px
@@ -138,6 +141,11 @@
         font-weight: 400
         &:last-child
             margin: 0
+        &:hover
+            color: $black
+        &:before
+            display: none
+            animation: none
         &.active
             color: $black
             background-color: $white

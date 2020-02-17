@@ -13,3 +13,22 @@
     to
         border-radius: 41% 59% 21% 79% / 42% 50% 50% 58%
         transform: translate3d(0, -70px, -70px)
+
+@keyframes animateMenu
+  0%
+    top: calc(50% - 2px)
+    left: -100%
+    height: 4px
+    z-index: 1
+
+  50%
+    top: calc(50% - 2px)
+    left: 0
+    height: 4px
+    z-index: 1
+
+  100%
+    top: 0
+    left: 0
+    height: 100%
+    z-index: -1
